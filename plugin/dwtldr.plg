@@ -1,0 +1,70 @@
+<?xml version='1.0' standalone='yes'?>
+
+<!DOCTYPE PLUGIN [
+<!ENTITY name      "dwtldr">
+<!ENTITY author    "desertwitch">
+<!ENTITY version   "2024.07.26">
+<!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/tldr-unRAID/main">
+<!ENTITY pluginURL "&gitURL;/plugin/&name;.plg">
+<!ENTITY pkgURL    "&gitURL;/packages">
+<!ENTITY plgPATH   "/boot/config/plugins/&name;">
+<!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
+]>
+
+<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" support="" min="6.10.0" icon="terminal">
+
+<CHANGES>
+## TLDR for UNRAID
+###2024.07.26
+- release note: welcome to the first version of the package.
+</CHANGES>
+
+<FILE Run="/bin/bash">
+<INLINE> 
+killall tldr
+exit 0
+</INLINE>
+</FILE>
+
+<FILE Name="&plgPATH;/tlrc-1.9.2-x86_64-1dw.txz" Min="6.10.0" Run="upgradepkg --install-new">
+<URL>&pkgURL;/tlrc-1.9.2-x86_64-1dw.txz</URL>
+<MD5>9dca3111cbb9e293c6776274b12b2d46</MD5>
+</FILE>
+
+<FILE Name="&emhttp;/README.md" Mode="0644">
+<INLINE>
+**TLDR for UNRAID**
+
+TLDR Command-Line Cheatsheets / Terminal Command: **tldr (target command)** / User Manual: **tldr --help**
+</INLINE>
+</FILE>
+
+<FILE Run="/bin/bash">
+<INLINE> 
+echo ""
+echo "-------------------------------------------------------------"
+echo " TLDR for UNRAID has been installed."
+echo " Version: &version; / Plugin Maintainer: &author;"
+echo "-------------------------------------------------------------"
+echo ""
+</INLINE>
+</FILE>
+
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
+killall tldr
+removepkg &plgPATH;/*.txz
+rm -rf /root/.cache/tlrc
+rm -rf /root/.config/tlrc
+rm -rf &plgPATH;
+rm -rf &emhttp;
+echo ""
+echo "-----------------------------------------------------------"
+echo " TLDR for UNRAID has been removed."
+echo " Version: &version; / Plugin Maintainer: &author;"
+echo "-----------------------------------------------------------"
+echo ""
+</INLINE>
+</FILE>
+
+</PLUGIN>
