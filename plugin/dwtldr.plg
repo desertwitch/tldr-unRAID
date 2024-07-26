@@ -40,7 +40,7 @@ TLDR Command-Line Cheatsheets / Terminal Command: **tldr** / User Manual: **tldr
 </FILE>
 
 <FILE Run="/bin/bash">
-<INLINE
+<INLINE>
 /usr/bin/tldr --update 2>&amp;1 
 echo ""
 echo "-------------------------------------------------------------"
