@@ -11,7 +11,7 @@
 <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
 ]>
 
-<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" support="" min="6.10.0" icon="terminal">
+<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" support="" min="6.10.0" icon="quote-left">
 
 <CHANGES>
 ## TLDR for UNRAID
@@ -41,14 +41,12 @@ TLDR Command-Line Cheatsheets / Terminal Command: **tldr** / User Manual: **tldr
 
 <FILE Run="/bin/bash">
 <INLINE>
-/usr/bin/tldr --update 2>&amp;1 
 echo ""
 echo "-------------------------------------------------------------"
 echo " TLDR for UNRAID has been installed."
 echo " Version: &version; / Plugin Maintainer: &author;"
 echo "-------------------------------------------------------------"
 echo ""
-exit 0
 </INLINE>
 </FILE>
 
