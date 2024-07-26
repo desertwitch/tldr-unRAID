@@ -11,7 +11,7 @@
 <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
 ]>
 
-<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" support="" min="6.10.0" icon="quote-left">
+<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" support="https://forums.unraid.net/topic/171110-plugin-tldr-command-line-cheatsheets-for-unraid/" min="6.10.0" icon="quote-left">
 
 <CHANGES>
 ## TLDR (Command-Line Cheatsheets) for UNRAID
