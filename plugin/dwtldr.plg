@@ -28,7 +28,7 @@ exit 0
 
 <FILE Name="&plgPATH;/tlrc-1.9.2-x86_64-1dw.txz" Min="6.10.0" Run="upgradepkg --install-new">
 <URL>&pkgURL;/tlrc-1.9.2-x86_64-1dw.txz</URL>
-<MD5>5e747a86e9df1ce741f17448059bf0bf</MD5>
+<MD5>8de4067dd233f7166d434b535c38cf92</MD5>
 </FILE>
 
 <FILE Name="&emhttp;/README.md" Mode="0644">
@@ -40,13 +40,15 @@ TLDR Command-Line Cheatsheets / Terminal Command: **tldr** / User Manual: **tldr
 </FILE>
 
 <FILE Run="/bin/bash">
-<INLINE> 
+<INLINE
+/usr/bin/tldr --update 2>&amp;1 
 echo ""
 echo "-------------------------------------------------------------"
 echo " TLDR for UNRAID has been installed."
 echo " Version: &version; / Plugin Maintainer: &author;"
 echo "-------------------------------------------------------------"
 echo ""
+exit 0
 </INLINE>
 </FILE>
 
