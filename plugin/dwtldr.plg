@@ -60,7 +60,7 @@ rm -rf &plgPATH;
 rm -rf &emhttp;
 echo ""
 echo "-----------------------------------------------------------"
-echo " TLDR (Command-Line Cheatsheets) has been removed."
+echo " TLDR (Command-Line Cheatsheets) for UNRAID has been removed."
 echo " Version: &version; / Plugin Maintainer: &author;"
 echo "-----------------------------------------------------------"
 echo ""
