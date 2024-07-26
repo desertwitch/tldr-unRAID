@@ -1,4 +1,4 @@
-### TLDR (Command-Line Cheatsheets) for UNRAID
+### TLDR Manpages for UNRAID
 
 _A plugin that installs the TLDR Command-Line Cheatsheets onto UNRAID systems._
 

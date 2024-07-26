@@ -14,7 +14,7 @@
 <PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" support="https://forums.unraid.net/topic/171110-plugin-tldr-command-line-cheatsheets-for-unraid/" min="6.10.0" icon="quote-left">
 
 <CHANGES>
-## TLDR (Command-Line Cheatsheets) for UNRAID
+## TLDR Manpages for UNRAID
 ###2024.07.26
 - release note: welcome to the first version of the package.
 </CHANGES>
@@ -33,7 +33,7 @@ exit 0
 
 <FILE Name="&emhttp;/README.md" Mode="0644">
 <INLINE>
-**TLDR (Command-Line Cheatsheets) for UNRAID**
+**TLDR Manpages for UNRAID**
 
 Simplified and community-driven manpages / Terminal Command: **tldr** / User Manual: **tldr --help**
 </INLINE>
@@ -43,7 +43,7 @@ Simplified and community-driven manpages / Terminal Command: **tldr** / User Man
 <INLINE>
 echo ""
 echo "-------------------------------------------------------------"
-echo " TLDR (Command-Line Cheatsheets) for UNRAID has been installed."
+echo " TLDR Manpages for UNRAID has been installed."
 echo " Version: &version; / Plugin Maintainer: &author;"
 echo "-------------------------------------------------------------"
 echo ""
@@ -60,7 +60,7 @@ rm -rf &plgPATH;
 rm -rf &emhttp;
 echo ""
 echo "-----------------------------------------------------------"
-echo " TLDR (Command-Line Cheatsheets) for UNRAID has been removed."
+echo " TLDR Manpages for UNRAID has been removed."
 echo " Version: &version; / Plugin Maintainer: &author;"
 echo "-----------------------------------------------------------"
 echo ""
