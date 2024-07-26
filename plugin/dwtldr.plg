@@ -28,7 +28,7 @@ exit 0
 
 <FILE Name="&plgPATH;/tlrc-1.9.2-x86_64-1dw.txz" Min="6.10.0" Run="upgradepkg --install-new">
 <URL>&pkgURL;/tlrc-1.9.2-x86_64-1dw.txz</URL>
-<MD5>9dca3111cbb9e293c6776274b12b2d46</MD5>
+<MD5>5e747a86e9df1ce741f17448059bf0bf</MD5>
 </FILE>
 
 <FILE Name="&emhttp;/README.md" Mode="0644">
