@@ -21,7 +21,7 @@
 
 <FILE Run="/bin/bash">
 <INLINE> 
-killall tldr
+killall tldr >/dev/null 2>&amp;1
 exit 0
 </INLINE>
 </FILE>
@@ -52,7 +52,7 @@ echo ""
 
 <FILE Run="/bin/bash" Method="remove">
 <INLINE>
-killall tldr
+killall tldr >/dev/null 2>&amp;1
 removepkg &plgPATH;/*.txz
 rm -rf /root/.cache/tlrc
 rm -rf /root/.config/tlrc
