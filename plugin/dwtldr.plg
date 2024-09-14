@@ -3,7 +3,7 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "dwtldr">
 <!ENTITY author    "desertwitch">
-<!ENTITY version   "2024.07.26">
+<!ENTITY version   "2024.09.14">
 <!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/tldr-unRAID/main">
 <!ENTITY pluginURL "&gitURL;/plugin/&name;.plg">
 <!ENTITY pkgURL    "&gitURL;/packages">
@@ -15,8 +15,10 @@
 
 <CHANGES>
 ## TLDR (Command-Line Cheatsheets) for UNRAID
+###2024.09.14
+- new: updated tlrc package to latest release version (v1.9.3)
 ###2024.07.26
-- release note: welcome to the first version of the package.
+- release note: welcome to the first version of the package
 </CHANGES>
 
 <FILE Run="/bin/bash">
@@ -26,9 +28,9 @@ exit 0
 </INLINE>
 </FILE>
 
-<FILE Name="&plgPATH;/tlrc-1.9.2-x86_64-1dw.txz" Min="6.10.0" Run="upgradepkg --install-new">
-<URL>&pkgURL;/tlrc-1.9.2-x86_64-1dw.txz</URL>
-<MD5>8de4067dd233f7166d434b535c38cf92</MD5>
+<FILE Name="&plgPATH;/tlrc-1.9.3-x86_64-1dw.txz" Min="6.10.0" Run="upgradepkg --install-new">
+<URL>&pkgURL;/tlrc-1.9.3-x86_64-1dw.txz</URL>
+<MD5>150c2e652644081bde42ffe3d331d9d5</MD5>
 </FILE>
 
 <FILE Name="&emhttp;/README.md" Mode="0644">
