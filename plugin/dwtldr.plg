@@ -3,7 +3,7 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "dwtldr">
 <!ENTITY author    "desertwitch">
-<!ENTITY version   "2026.05.01">
+<!ENTITY version   "2026.05.01a">
 <!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/tldr-unRAID/main">
 <!ENTITY pluginURL "&gitURL;/plugin/&name;.plg">
 <!ENTITY pkgURL    "&gitURL;/packages">
@@ -30,8 +30,8 @@ exit 0
 </INLINE>
 </FILE>
 
-<FILE Name="&plgPATH;/tldr-1.13.0-x86_64-1dw.txz" Min="6.10.0" Run="upgradepkg --install-new">
-<URL>&pkgURL;/tldr-1.13.0-x86_64-1dw.txz</URL>
+<FILE Name="&plgPATH;/tlrc-1.13.0-x86_64-1dw.txz" Min="6.10.0" Run="upgradepkg --install-new">
+<URL>&pkgURL;/tlrc-1.13.0-x86_64-1dw.txz</URL>
 <MD5>e0419e353847f572a36747929b40fbab</MD5>
 </FILE>
 
