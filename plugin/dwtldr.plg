@@ -3,7 +3,7 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "dwtldr">
 <!ENTITY author    "desertwitch">
-<!ENTITY version   "2026.05.01b">
+<!ENTITY version   "2026.10.06">
 <!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/tldr-unRAID/main">
 <!ENTITY pluginURL "&gitURL;/plugin/&name;.plg">
 <!ENTITY pkgURL    "&gitURL;/packages">
@@ -15,6 +15,9 @@
 
 <CHANGES>
 ## TLDR (Command-Line Cheatsheets) for UNRAID
+MAINTENANCE MODE: With Unraid approaching its transition to Fedora, this package is now moving into maintenance mode. Existing installs will continue to work as they do today, and fixes will be provided on a best-effort basis to keep core functionality running. New features aren't planned, and the UI may not always display perfectly if future Unraid versions should change their layout. If a future Unraid release introduces a breaking change, the maximum supported version will be set at that point to help avoid broken installs, which would likely mark the end of support for this plugin. Thank you for your understanding and continued support.
+###2026.10.06
+- announce maintenance mode (no functional changes)
 ###2026.05.01b
 - new: updated tlrc package to latest release version (v1.13.0)
 ###2024.09.14
